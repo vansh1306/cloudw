@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background: rgb(128, 127, 127);
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header h1 span.health {
+  color: red; /* Change "Health" to red */
+}
+
+header h1 span.track {
+  color: black; /* Change "Track" to black */
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 70px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+section {
+  padding: 60px 0;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+section ul {
+  list-style: none;
+}
+
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #555;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  
+}
+.vertical-menu {
+  width: 200px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #f4f4f4;
+  overflow-y: auto;
+}
+
+.vertical-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.vertical-menu li {
+  padding: 8px;
+  text-align: center;
+}
+
+.vertical-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+}
+
+.vertical-menu li a:hover {
+  background-color: #ddd;
+}
+
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  background: rgb(233, 15, 15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  
+}
+header img {
+  width: 350px; /* Adjust the width as needed */
+  height: 300px; /* Maintain aspect ratio */
+  display: block;
+  position: relative;
+  margin-left: 900px; 
+}
+ </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthTrack - Healthcare Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+        <img src="attachment_26604297.jpeg" alt="HealthTrack Logo">
+        <h1><span class="health">Health</span><span class="track">Track</span></h1>
+      <nav>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#sign Up">SignUp</a></li>
+          <li><a href="#login">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section id="features">
+    <div class="container">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Streamlined scheduling</li>
+        <li>Electronic Health Records (EHR)</li>
+        <li>Integrated billing system</li>
+        <li>Telehealth services</li>
+      </ul>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <section id="benefits">
+    <div class="container">
+      <h2>Benefits</h2>
+      <p>HealthTrack aims to:</p>
+      <ul>
+        <li>Improve efficiency in healthcare management</li>
+        <li>Enhance patient care</li>
+        <li>Drive positive change in the healthcare industry</li>
+      </ul>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+  </section>
+  <section id="signup">
+    <div class="container">
+      <h2>SignUp</h2>
+      <form id="signup-form">
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </section>
+  
+  <!-- Login Form -->
+  <section id="login">
+    <div class="container">
+      <h2>Login</h2>
+      <form id="login-form">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </section>
+  <footer id="contact">
+    <div class="container">
+      <p>&copy; 2024 HealthTrack. All rights reserved.</p>
+      <p>Contact us:@healthtrack.com</p>
+    </div>
+  
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
